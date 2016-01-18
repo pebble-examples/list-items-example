@@ -1,0 +1,23 @@
+{
+  "uuid": "ce07ca2e-6823-411a-834b-6ea83d2bb763",
+  "shortName": "list-items-example",
+  "longName": "list-items-example",
+  "companyName": "Pebble",
+  "versionLabel": "1.0",
+  "sdkVersion": "3",
+  "targetPlatforms": ["aplite", "basalt", "chalk"],
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {
+    "AppKeyItem0": 0,
+    "AppKeyItem1": 1,
+    "AppKeyItem2": 2,
+    "AppKeyItem3": 3,
+    "AppKeyItem4": 4,
+    "AppKeyItem5": 5
+  },
+  "resources": {
+    "media": []
+  }
+}
