@@ -1,7 +1,7 @@
 var dataItems = [ 2, 4, 8, 16, 32, 64 ];
 var NUM_ITEMS = dataItems.length;
 
-function sendItem(items, index) {
+function sendNextItem(items, index) {
   // Build message
   var key = 'AppKeyItem' + index;
   var dict = {};
@@ -14,7 +14,7 @@ function sendItem(items, index) {
 
     if(index < NUM_ITEMS) {
       // Send next item
-      sendItem(items, index);
+      sendNextItem(items, index);
     }
   }, function() {
     console.log('Item transmission failed: ' + index);
@@ -23,7 +23,7 @@ function sendItem(items, index) {
 
 function sendList(items) {
   var index = 0;
-  sendItem(items, index);
+  sendNextItem(items, index);
 }
 
 Pebble.addEventListener('ready', function() {
